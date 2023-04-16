@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVALUATION DIAPORAMA DIDILLON</title>
+    <!-- appel pour CSS et js -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    
+    <!-- création de container diaporama pour le caroussel -->
+    <container id="containe">
+        <div id="diaporama">
+            <!-- création des seconds boutons correspond a chaque diapositive en haut de page  -->
+            <div class="boutons-image">
+                <span class="bouton" onclick="boutonImage(1)"></span>
+                <span class="bouton" onclick="boutonImage(2)"></span>
+                <span class="bouton" onclick="boutonImage(3)"></span>
+                <span class="bouton" onclick="boutonImage(4)"></span>
+            </div>
+            <!-- création de div pour chaque image pour le diaporama -->
+            <div class="caroussel">
+                <img class="img" src="./img/1.jpg">
+                <div class="text">LA FORET</div>
+            </div>
+            <div class="caroussel">
+                <img class="img" src="./img/2.jpg">
+                <div class="text">LEVER DE SOLEIL </div>
+            </div>
+            <div class="caroussel">
+                <img class="img" src="./img/3.jpg">
+                <div class="text">CAMPAGNE</div>
+            </div>
+            <div class="caroussel">
+                <img class="img" src="./img/4.jpg">
+                <div class="text">BORD DE MER</div>
+            </div>
+            <!-- création des boutons gauche et droite -->
+            <a class="gauche" onclick="changerImage(-1)">&lt;</a>
+            <a class="droit" onclick="changerImage(1)">&gt;</a>
+        </div>
+    </container>
+</body>
+</html>
